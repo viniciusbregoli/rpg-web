@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("background-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+.scene {
+    flex: 1;
+    max-width: 800px; 
+    margin: 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.narration {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background: gray
+
+}
+
+.scene {
+    position: relative;
+    overflow: hidden;
+}
+
+#scene-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.arrow {
+    position: absolute;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.arrow img {
+    width: 40px;
+}
+
+.arrow.up {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-90deg);
+}
+.arrow.right {
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+.arrow.down {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+}
+.arrow.left {
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%) rotate(180deg);
+}
