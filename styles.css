@@ -22,32 +22,22 @@ h1 {
     text-align: center;
 }
 
-
 .scene {
-    flex: 1;
-    max-width: 800px; 
-    margin: 10px;
+    /* remova flex: 1; */
+    max-width: 800px;
+    width: 600px; /* Defina a largura desejada para a cena */
+    height: 400px; /* Defina a altura desejada para a cena */
+    margin: 10px auto; /* Adicionado auto para centralizar */
     background: rgba(0, 0, 0, 0.5);
-}
-
-.narration {
-    flex: 1;
-    text-align: center;
-    padding: 10px;
-    background: gray
-
-}
-
-.scene {
     position: relative;
     overflow: hidden;
 }
 
 #scene-image {
-    max-width: 100%;
-    height: auto;
+    width: 600px; /* Defina a largura desejada para a imagem */
+    height: 400px; /* Defina a altura desejada para a imagem */
+    object-fit: cover; /* Isso fará com que a imagem cubra a área sem distorção */
 }
-
 .arrow {
     position: absolute;
     background: none;
@@ -78,4 +68,14 @@ h1 {
     top: 50%;
     left: 10px;
     transform: translateY(-50%) rotate(180deg);
+}
+
+.narration {
+    width: 100%; /* Ocupa a largura total disponível */
+    max-width: 800px; /* Não estica além de 800px */
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    background: gray;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }

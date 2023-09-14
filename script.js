@@ -1,3 +1,7 @@
+// make a map for me where 
+const map = []
+
+
 function move(direction) {
     const narrativeText = document.getElementById('narrative-text');
     const sceneImage = document.getElementById('scene-image');
@@ -9,7 +13,7 @@ function move(direction) {
             break;
         case 'right':
             narrativeText.textContent = "Você foi para uma praia.";
-            sceneImage.src = "beach.jpg";
+            sceneImage.src = "./assets/beach.jpg";
             break;
         case 'down':
             narrativeText.textContent = "Você desceu para um vale.";
